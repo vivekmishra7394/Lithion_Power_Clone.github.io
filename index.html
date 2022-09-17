@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Website</title>
+    <link rel="stylesheet" media="screen and (max-width:920px)" href="css/stylee.css">
+    <!-- <link rel="stylesheet2" href="css/style2.css"> -->
+    <style>
+        body{
+            font-family: Serif;
+            }
+        body::before{
+            content: "";
+            background-image: url('Myy Image s/batterynew.png');
+            background-repeat: no-repeat;
+            opacity: 0.6;
+        }
+        #logo {
+            margin: 10px;
+        }
+
+        #logo img {
+            display: flex;
+            justify-content: center;
+            height: 40px;
+            margin: 3px 6px;
+
+        }
+        
+
+        #navbar {
+            width: auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: auto;
+            z-index: -1;
+            /* opacity: 0.4; */
+            left: 0;
+            top: 0;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: aliceblue;
+            display: block;
+            padding: 9px;
+            border-radius: 15px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+
+            color: black;
+            background-color: rgb(89, 215, 135);
+
+            padding: 9px;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            padding: 250px 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            background: url('Myy Image s/batterynew.png');
+            background-repeat: no-repeat center center/cover;
+            /* background-size: 450px 350px; */
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+
+            opacity: 0.2;
+
+        }
+
+        #home h1 {
+            color: rgb(0, 145, 48);
+            text-align: center;
+            height: 10px;
+        }
+
+        #home p {
+            color: rgb(0, 0, 0);
+            /* height: 10px; */
+            text-align: center;
+            font-size: x-large;
+            <font face="Comic sans MS" size=" 5">Comic Sans MS</font>
+        }
+
+        .primary {
+            height: 50px;
+            font-size: 70px;
+            padding: 2px;
+            color: black;
+        }
+        .primary p{
+            height: 50px;
+            font-size: 70px;
+            padding: 2px;
+            color: black;
+        }
+
+        .btn {
+            color: aliceblue;
+            background-color: rgb(21, 125, 21);
+            padding: 5px 18px;
+            margin: 30px;
+            border-radius: 20px;
+
+        }
+
+        .btn:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            /* padding:  20px;
+            margin: 20px 20px ; */
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+
+        .h-secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .center {
+            text-align: center;
+
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+        h1 .primary center{
+            font-family:'Courier New', Courier, monospace;
+        }
+       
+
+        #services .box {
+            margin: auto;
+            border: 2px solid rgb(0, 185, 65);
+            margin: 3px 20px;
+            border-radius: 63px;
+            background-color: rgb(229, 234, 234);
+            padding: 19px;
+            box-shadow: 6px 7px rgb(4, 160, 74);
+        
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+        #services .box:hover{
+            cursor: pointer;
+            background-color: rgb(93, 193, 126);
+        }
+
+        #services .box img {
+            display: block;
+            margin: auto;
+            height: 170px;
+        }
+
+        #services .box h2 {
+            font-family: 'Bree Serif', serif;
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+           
+        }
+        .services-container{
+
+        }
+        .services-container ::before{
+          content: "";  
+          background-image: url('Myy Image s/batterynew.png');
+        
+          opacity: 0.7;
+          z-index: 
+          
+        }
+
+
+        .h-tetra{
+            padding: 23px;
+            height: 45px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 64px;
+        }
+
+        #clients {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-item {
+            /* padding: 14px; */
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            height: 344px;
+            width: 100%;
+            /* height: 100%; */
+            opacity: 0.15;
+            z-index: -1;
+            background-image: url('Myy Image s/batterynew.png');
+            background-repeat: no-repeat;
+        }
+
+        #clients img {
+            height: 100px;
+            padding: 34px;
+        }
+
+        #clients img:hover {
+            cursor: pointer;
+        }
+        #contact
+        {
+            position: relative;
+            bottom: 0;
+            right: 0%;
+
+        }
+        #contact::before{
+            content:" ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+           
+            background-image: url('Myy Image s/pexels-photo-1275929.jpeg');
+            opacity: 0.5;
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 7px 7px 7px 7px
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Myy Image s/OIP-removebg-preview.png">
+
+        </div>
+        <ul>
+            <li class="item"><a href="">Home</a></li>
+            <li class="item"><a href="">Services</a></li>
+            <li class="item"><a href="">About Us</a></li>
+            <li class="item"><a href="">Contact Us</a></li>
+            <li class="item"><a href="">Settings</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="primary">Lithium Ion Batteries</h1>
+        <p>It provided portable electricity
+            It provided back-up of electricity during power loss and fluctuation.
+            It is a source <br> of power to electric vehicles and is in good demand in the automotive industry..</p>
+        <button class="btn"> Add To Cart</button>
+    </section>
+    <section class="services-container">
+        <h1 class="primary center" >Our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="Myy Image s/sipla.png" alt="">
+            
+                <a href="https://www.power-technology.com/marketdata/sipla-wind-farm-india/" target="_blank">
+                <h2 class="h-secondary">Sipla power Ltd.</h2>
+                <p class="center">A company that knows how to interact with customers thanks to its dual function of a
+                    reliable supplier and a qualified partner, and that knows how to support him or her in an integrated
+                    management of the order. The so-called turnkey service.</p>
+                </a>
+            </div>
+            <div class="box">
+                <img src="Myy Image s/191-1915070_exide-logo-exide-battery-logo-png-clipart-removebg-preview.png"
+                    alt="">
+                    <a href="https://exidebattery.in/homepage/" target="_blank">
+                <h2 class="h-secondary">Exide Batteries Ltd.</h2>
+                <p class="center">Exide batteries power cars, boats, heavy duty vehicles, golf carts, powersports and
+                    lawn/garden applications.</p>
+                    </a>
+            </div>
+            <div class="box">
+                <img src="Myy Image s/llo-removebg-preview.png" alt="">
+                <a href="https://www.okayapower.com/lithium-batteries.php" target="_blank">
+                <h2 class="h-secondary">Okaya Batteries Ltd.</h2>
+                <p class="center">A company that knows how to interact with customers thanks to its dual function of a
+                    reliable supplier and a qualified partner, and that knows how to support him or her in an integrated
+                    management of the order. The so-called turnkey service.</p>
+            </a>
+        </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-tetra">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item"><img src="Myy Image s/Hero-Electric-removebg-preview.png" alt=""></div>
+            <div class="client-item"><img src="Myy Image s/OIP-removebg-preview.png" alt=""></div>
+            <div class="client-item"><img
+                    src="Myy Image s/191-1915070_exide-logo-exide-battery-logo-png-clipart-removebg-preview.png" alt="">
+            </div>
+            <div class="client-item">
+                <a href="https://www.power-technology.com/marketdata/sipla-wind-farm-india/"><img src="Myy Image s/sipla.png" alt=""></a></div>
+        </div>
+    </section>
+    <section id="contact">
+       <br> <h1 class="h-primary center">Contact Us</h1>
+        </h1>
+        <div id="contact-box">
+        <form action="">
+            <div class="form1">
+               
+                <p>Call us  (+91) 011 - 27934064 <br>  <br>  contact@lithionpower.com</p>
+                <a href="https://www.linkedin.com/company/lithion/">LinkedIn</a>
+                <br>
+                <br>
+                <a href="https://twitter.com/lithionpower/">Twitter</a>
+                <br>
+                <br>
+            </div>
+        </form>
+        </div>
+        
+    </section>
+    <footer><div class="center">
+        Copyright &copy; 2022.  All rights reserved
+    </div>
+</footer>
+</body>
+
+</html>
